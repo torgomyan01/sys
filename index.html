@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800&family=Oxanium:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!--  Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--  scripts -->
+  <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+  <title>SYS</title>
+</head>
+<body>
+
+<header>
+  <div class="mobile-menu-board">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="header-left">
+    <a href="/" class="left-logo">
+      <img src="images/logo-site.svg" alt="" width="16" class="mr-5">
+      sys.id
+    </a>
+    <button class="btn-balck mr-5">
+      Submit Ticket
+    </button>
+    <button class="btn-balck mr-5">
+      Send Email
+    </button>
+  </div>
+  <div class="logo">
+    <a href="/">
+      <img src="images/logo-site.svg" alt="Logo Site">
+    </a>
+  </div>
+  <div class="header-right">
+    <button class="btn-balck mr-5">
+      Log In
+    </button>
+    <button class="btn-balck mr-5">
+      Sign Up
+    </button>
+  </div>
+  <div class="login-block">
+    <div class="dropdown">
+      <button class="btn fs40 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-light fa-circle-user"></i>
+      </button>
+      <div class="dropdown-menu px-2 py-3">
+        <div class="mb-3 flex-center-center w-100">
+          <button class="btn-balck mr-5 w-100">
+            Log In
+          </button>
+        </div>
+        <div class="flex-center-center w-100">
+          <button class="btn-balck mr-5 w-100">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div class="menu">
+    <a class="menu-item" href="#main">Main</a>
+    <div class="menu-item">
+      <a href="#web-development" class="c-black menu-name">
+        Web Development
+        <i class="far fa-angle-down ml-7"></i>
+      </a>
+      <div class="menu-category-block">
+        <a href="#web-design" class="category-item">
+          Web Design
+        </a>
+        <a href="#front-end-backend" class="category-item">
+          Front/Back Dev
+        </a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#web-services" class="c-black menu-name">
+        Web Services
+        <i class="far fa-angle-down ml-7"></i>
+      </a>
+      <div class="menu-category-block">
+        <a href="#just-hosting" class="category-item">
+          Just Hosting
+        </a>
+        <a href="#virtualization" class="category-item">
+          Virtualization
+        </a>
+        <a href="#bare-metal" class="category-item">
+          Bare Metal
+        </a>
+        <a href="#data-migration" class="category-item">
+          Data Migration
+        </a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#security" class="c-black menu-name">
+        Security
+        <i class="far fa-angle-down ml-7"></i>
+      </a>
+      <div class="menu-category-block">
+        <a href="#ssl-ssl" class="category-item">
+          SSL
+        </a>
+        <a href="#backup" class="category-item">
+          Backup
+        </a>
+        <a href="#malware-optimization" class="category-item">
+          Malware Optimization
+        </a>
+        <a href="#performance" class="category-item">
+          Performance
+        </a>
+        <a href="#dev-ops" class="category-item">
+          DevOps
+        </a>
+      </div>
+    </div>
+    <div class="menu-item" >
+      <a href="#moreover" class="c-black menu-name">
+        Moreover
+        <i class="far fa-angle-down ml-7"></i>
+      </a>
+      <div class="menu-category-block">
+        <a href="#vpn-vpn" class="category-item">
+          VPN
+        </a>
+        <a href="#smtp-smtp" class="category-item">
+          SMTP
+        </a>
+        <a href="#network" class="category-item">
+          Network
+        </a>
+        <a href="#acrcitecture" class="category-item">
+          Arcitecture
+        </a>
+        <a href="#monitoring" class="category-item">
+          Monitoring
+        </a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#company"  class="c-black menu-name">
+        Company
+        <i class="far fa-angle-down ml-7"></i>
+      </a>
+      <div class="menu-category-block">
+        <a href="#about-us" class="category-item">
+          About Us
+        </a>
+        <a href="#our-mission" class="category-item">
+          Our Mission
+        </a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#contact" class="c-black menu-name">
+        Contact
+        <i class="far fa-angle-down ml-7"></i>
+      </a>
+      <div class="menu-category-block">
+        <a href="#email-section" class="category-item">
+          Email
+        </a>
+      </div>
+    </div>
+    <div class="menu-item">
+      <a href="#" class="c-black">Join Us</a>
+      <a href="#" class="ml-10 c-black">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" class="ml-10 c-black">
+        <i class="fab fa-telegram"></i>
+      </a>
+    </div>
+
+  </div>
+  <div class="content-site">
+
+
+    <section class="main-menu" id="main">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium">sys.id: web services fulfilment hub</h1>
+      <h3 class="text-center c-black fs32 mt-35">What we do</h3>
+      <p class="text-center mt-35 c-black fs26">
+        Web Sites Development | System Administration | Servers troubleshooting | Long-term support and maintenance
+      </p>
+      <div class="flex-center-center mt-20">
+        <img src="images/cat.jpg" alt="cat">
+      </div>
+      <p class="text-center fs26 mt-35 c-black">
+        You have an idea. We manage the rest.
+      </p>
+      <p class="text-center mt-10 c-black fs26">
+        Idea -> Design -> Create -> Host -> Operations + Updates and Support
+      </p>
+      <p class="text-center mt-40 fs26 c-black bold-text">
+        Focus on your business and operations, we’ll take care of the technical part.
+      </p>
+    </section>
+
+    <div class="solid"></div>
+
+    <section class="main-menu" id="web-development">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Web Development</h1>
+      <p class="info-to-section">
+        <img src="images/web-development.jpg" alt="Web Development" class="img-left">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad. <br>
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax. <br>
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska. <br>
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon. <br>
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling. <br>
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+    <div class="solid"></div>
+
+    <section class="main-menu" id="web-design">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Web Design</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment.<br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="front-end-backend">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Front/Back Dev</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment.<br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="web-services">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Web Services</h1>
+      <p class="info-to-section">
+        <img src="images/web-service.jpg" alt="" class="img-right">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad. <br>
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax.
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska.
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon.
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+        </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="just-hosting">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Just Hosting</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din.
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör.
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen.
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta.
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten.
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment.
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+
+    <section class="main-menu" id="virtualization">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Virtualization</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="bare-metal">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Bare Metal</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="data-migration">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Data Migration</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+    <section class="main-menu" id="security">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Security</h1>
+      <p class="info-to-section">
+        <img src="images/securety.jpg" alt="Security" class="img-left">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad. <br>
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax. <br>
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska. <br>
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon. <br>
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="ssl-ssl">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">SSL</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="backup">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Backup</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="malware-optimization">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Malware Optimization</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="performance">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Performance</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="dev-ops">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">DevOps</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+
+    <section class="main-menu" id="moreover">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Moreover</h1>
+      <p class="info-to-section">
+        <img src="images/moreover.jpg" alt="Moreover" class="img-right">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad.
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax.
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska.
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon.
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="vpn-vpn">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">VPN</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+    <section class="main-menu" id="smtp-smtp">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">SMTP</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="network">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Network</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+    <section class="main-menu" id="acrcitecture">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Arcitecture</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="monitoring">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Monitoring</h1>
+      <p class="info-to-section">
+        Lörem ipsum divesm presam tys, iskap i irtad. Kolangen sogon när mönysade fast hypona tetrar. Transaktiv astron enmodern. Kontratätt stenodenat nysm kan. Ninde krosamma niplaktig mirad.
+        <br>
+        Nihet tåse flossa som vask hemitrer. Episolingar. Incel nahis, om intraligen respektive astron. Prektiga demigt. Resultatvarna din. <br>
+        Bese groma sektig. Kontratt ism krodör. Plaspenat mir. Heröktig plagt demöna. Fåna spen förutom seng i eument dör. <br>
+        Ogt makrong antikenar, till tridiktisk. Rypres krossa rent ärar kavengen. Heteroment homomivis kande utan plan. Retrev gigamurad. Kona otår fådöligen. <br>
+        Ultraligt anten spess pängen tranadade. Naspengen krovis uligt. Nyvis kromåvis. Tobleronepolitik binde täktigt kynyliga att mir. Matbil ultraheten trapäsk pultvätta. <br>
+        Triniliga trahenade bioras. Yliga krore, dena treskapet. Explainer luktigt plaliga en nehän: dint. Saktiga servicebarn transpod. Livina ten. <br>
+        Denast manyvis: möhigon. Kroras skuldkvotstak. Nyhetsundvikare dirad, inade i dida. Reavesa nyfriskjobb i semidade. Gett kroment. <br>
+        Kvasir nism. Nätfiske. Pseudol sast euse fototropi. Nov anticentrism liksom nymöda previs. Fehäv elektrotyp i hemill, huruvida suling. Du kan vara drabbad
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="company">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Company</h1>
+      <p class="info-to-section">
+        <img src="images/company.jpg" alt="Company" class="img-left">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad.
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax.
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska.
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon.
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="about-us">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">About Us</h1>
+      <p class="info-to-section">
+        <img src="images/about-us.jpg" alt="Company" class="img-right">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad.
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax.
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska.
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon.
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+
+    <section class="main-menu" id="our-mission">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Our Mission</h1>
+      <p class="info-to-section">
+        <img src="images/our-mission.jpg" alt="Company" class="img-left">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad.
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax.
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska.
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon.
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+    <div class="solid"></div>
+
+
+
+    <section class="main-menu" id="contact">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Contact</h1>
+      <p class="info-to-section">
+        <img src="images/contact.jpg" alt="Company" class="img-right">
+        Lörem ipsum kana zorra, när plator var. Stenon tilogi i osam. Fesk fussa. Bevingen infrabädat. Birad.
+        Nyng anang. Vörtad paben sel. Teranirade antitument uskade preligt. Dobelt. Spegt bed utan kigt il gensax.
+        Lanyligen ovasamma ontosocial, divossade fyvis. Geofade reng. Faplar sömende om vågen, våpp sus. Mikron birad apektiga liksom polyvevånerade. Tret lanyska.
+        Hemirad sase sor intraning. Ang astrokemi doska. Mosamma misat, oska negen nystartsjobb. Ambidiktisk cringe till pofangen. Näringslots presevis jiktig begon.
+        Laddhybrid fad anten. Mide poligt i niling. Öl astronessade i sadiv, pon. Alasm jipogen abnomi mipp. Synade safariforskning decining coronahälsning, uggling.
+        Lan livelogi dihän i kroment sedan vokasm. Hemimång prejer.
+      </p>
+    </section>
+
+
+    <section class="main-menu mt65" id="email-section">
+      <h1 class="c-black text-center mt-30 fs42 font-oxanium mb-100">Email</h1>
+      <form action="#" class="email-form">
+        <label class="def-input">
+          <span>Email Address</span>
+          <input type="text" name="email">
+        </label>
+        <label class="def-input">
+          <span>Subject</span>
+          <input type="text" name="subject">
+        </label>
+        <label class="def-input">
+          <span>Message</span>
+          <input type="text" name="message">
+        </label>
+
+        <div class="flex-center-center mt-65">
+          <button class="btn-balck">Send Email</button>
+        </div>
+      </form>
+    </section>
+
+  </div>
+</main>
+<!--<footer>-->
+<!--  (C)2022 sys.id-->
+<!--</footer>-->
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

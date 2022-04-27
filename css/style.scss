@@ -1,0 +1,560 @@
+html {
+  font-size: 16px;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+
+$font-nanito: 'Nunito', sans-serif;
+$font-oxanium: 'Oxanium', cursive;
+$font-chakra-petch: 'Chakra Petch', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  outline: none;
+  font-family: $font-nanito;
+  scroll-behavior: smooth;
+}
+
+.font-nunito{
+  font-family: $font-nanito;
+}
+
+.font-oxanium{
+  font-family: $font-oxanium;
+}
+
+.font-chakra-petch{
+  font-family: $font-chakra-petch;
+}
+
+
+@function printFlexType($type) {
+  @if $type == 's' {
+    @return start;
+  } @else if $type == 'c' {
+    @return center;
+  } @else if $type == 'e' {
+    @return end;
+  } @else if $type == 'sb' {
+    @return space-between;
+  } @else if $type == 'sa' {
+    @return space-around;
+  }
+}
+
+@mixin col($num) {
+  width: calc((100% / 12) * #{$num});
+}
+
+@mixin flex($x, $y) {
+  display: flex;
+  justify-content: printFlexType($x);
+  align-items: printFlexType($y);
+}
+
+@mixin bg() {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+$mobile: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$fontSizes: (5);
+$fontMedia: ("xxl": $xxl, "xl": $xl, "lg": $lg, "md": $md, "sm": $sm);
+$margins: ("m": "margin", "mt": "margin-top", "mr": "margin-right", "mb": "margin-bottom", "ml": "margin-left");
+$paddings: ("p": "padding", "pt": "padding-top", "pr": "padding-right", "pb": "padding-bottom", "pl": "padding-left");
+
+
+
+@for $i from 5 through 65 {
+  $fontSizes: append($fontSizes, $i);
+}
+
+
+// ----------------- MARGINS AND PADDINGS --------------------
+@each $size in $fontSizes {
+  @each $media, $mediaSize in $fontMedia {
+    @media (max-width: $mediaSize){
+      @each $margin, $name in $margins {
+        .#{$margin}-#{$media}-#{$size}{
+          #{$name}: #{$size / 16}rem;
+        }
+      }
+    }
+  }
+  @each $media, $mediaSize in $fontMedia {
+    @media (max-width: $mediaSize){
+      @each $padding, $name in $paddings {
+        .#{$padding}-#{$media}-#{$size}{
+          #{$name}: #{$size / 16}rem;
+        }
+      }
+    }
+  }
+  @each $margin, $name in $margins {
+    .#{$margin}-#{$size}{
+      #{$name}: #{$size / 16}rem;
+    }
+  }
+  @each $padding, $name in $paddings {
+    .#{$padding}-#{$size}{
+      #{$name}: #{$size / 16}rem;
+    }
+  }
+}
+
+// ----------------- MARGINS AND PADDINGS --------------------
+
+
+
+@each $size in $fontSizes {
+  .fs#{$size} {
+    font-size: #{$size / 16}rem;
+  }
+}
+
+@each $sizeName, $size in $fontMedia {
+  @media (min-width: $md) {
+    @each $size in $fontSizes {
+      .fs#{$size}-#{$sizeName} {
+        font-size: #{$size / 16}rem;
+      }
+    }
+  }
+}
+
+$c-black: #023436;
+$c-black-hover: #049A8F;
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $c-black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $c-black-hover;
+}
+
+.flex-start-center{
+  @include flex('s', 'c');
+}
+.flex-center-center{
+  @include flex('c', 'c');
+}
+.flex-end-center{
+  @include flex('e', 'c');
+}
+.flex-between-center{
+  @include flex('sb', 'c');
+}
+.text-center{
+  text-align: center;
+}
+
+// COLORS
+.c-black{
+  color: $c-black;
+}
+
+// BOLD TEXTS
+.bold-text {
+  font-weight: 700;
+}
+
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: unset ;
+}
+
+.dropdown-menu{
+  background-color: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+
+.btn-balck {
+  border: 0;
+  padding: 0.1875rem 1.0625rem;
+  border-radius: 11.5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #EEEEEE;
+  background-color: $c-black;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: $font-chakra-petch;
+  white-space: nowrap;
+  &:hover{
+    background-color: $c-black-hover;
+  }
+}
+
+$header-height: 5.375rem;
+
+a{
+  color: $c-black;
+  &:hover{
+    color: $c-black-hover;
+  }
+}
+header{
+  width: 100%;
+  height: $header-height;
+  @include flex('sb', 'c');
+  padding: 0 2.8125rem;
+  @media (max-width: $md){
+    box-shadow: 0 0 5px #0000003b;
+  }
+  .mobile-menu-board, .login-block{
+    display: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .header-left{
+    @include flex('s', 'c');
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  .header-right{
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+  .login-block{
+    @media (max-width: $md) {
+      display: block;
+    }
+  }
+  .mobile-menu-board{
+    width: 30px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: $md) {
+      display: flex;
+    }
+    &.active{
+      span{
+        &:nth-of-type(1){
+          transform: rotate(45deg);
+          top: 10px;
+        }
+        &:nth-of-type(2){
+          opacity: 0;
+        }
+        &:nth-of-type(3){
+          transform: rotate(-45deg);
+          top: -10px;
+        }
+      }
+    }
+    span {
+      transition: 0.3s;
+      width: 100%;
+      height: 2px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      background-color: $c-black;
+      position: relative;
+      &:last-child{
+        margin: 0;
+      }
+      &:nth-of-type(1){
+        transform: rotate(0);
+        top: 0
+      }
+      &:nth-of-type(2){
+        opacity: 1;
+      }
+      &:nth-of-type(3){
+        transform: rotate(0);
+        top: 0;
+      }
+    }
+  }
+  .left-logo{
+    @include flex('s','c');
+    color: $c-black;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 2.0625rem;
+    font-family: $font-chakra-petch;
+    img{
+      margin-right: 5px;
+    }
+  }
+  .logo{
+    img{
+      width: 3.9375rem;
+    }
+  }
+}
+
+
+main{
+  width: 100%;
+  height: calc(100vh - #{$header-height});
+  @include flex('s', 's');
+  padding-left: 3.75rem;
+  @media (max-width: $md){
+    padding-left: 0;
+  }
+  .menu{
+    @include col(3);
+    margin-top: 3rem;
+    @media (max-width: $lg){
+      @include col(4);
+    }
+    @media (max-width: $md){
+      position: fixed;
+      background: #ffffff17;
+      width: 100%;
+      height: calc(100vh - 60px);
+      margin-top: 0;
+      backdrop-filter: blur(7px);
+      left: -100%;
+      transition: 0.3s;
+      padding-left: 2.8125rem;
+      padding-top: 1rem;
+      &.active{
+        left: 0;
+      }
+    }
+    .menu-item{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: $c-black;
+      transition: 0.3s;
+      display: block;
+      margin-bottom: 0.625rem;
+      font-family: $font-oxanium;
+      .menu-name{
+        white-space: nowrap;
+      }
+      &:hover{
+        color: $c-black-hover;
+        .menu-name{
+          color: $c-black-hover;
+        }
+      }
+      .menu-category-block{
+        width: 100%;
+        max-height: 0;
+        margin-bottom: 10px;
+        overflow: hidden;
+        transition: 0.25s;
+        .category-item {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.125rem;
+          color: #023436;
+          margin-left: 3.75rem;
+          margin-top: 10px;
+          display: block;
+          @include flex('s', 'c');
+          &.active{
+            color: $c-black-hover;
+          }
+          &:hover{
+            color: $c-black-hover;
+          }
+        }
+      }
+      i{
+        transition: 0.3s;
+      }
+      &.active{
+        .menu-name{
+          color: $c-black-hover;
+        }
+        i{
+          transform: rotate(-180deg);
+        }
+        .menu-category-block{
+          transition: 0.5s;
+          max-height: 200px;
+        }
+      }
+    }
+  }
+  .content-site{
+    @include col(9);
+    padding-right: 19%;
+    height: 100%;
+    overflow-y: auto;
+    @media (max-width: $lg){
+      padding: 0 1.25rem;
+      width: 100%;
+    }
+    @media (max-width: $xl){
+      padding: 0 1.25rem;
+      width: 100%;
+    }
+
+    .info-to-section{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      color: $c-black;
+      img{
+        margin-top: 0.3125rem;
+        @media (max-width: $md){
+          width: 116px;
+        }
+      }
+    }
+    .main-menu{
+      width: 100%;
+      min-height: 500px;
+      @media (max-width: $lg){
+        min-height: unset;
+      }
+    }
+  }
+}
+.mb-100{
+  margin-bottom: 6.25rem;
+  @media (max-width: $sm){
+    margin-bottom: 3.25rem;
+  }
+}
+
+.img-left{
+  float: left;
+  margin-right: 1.3125rem;
+}
+
+.img-right{
+  float: right;
+  margin-left: 1.3125rem;
+}
+
+.solid{
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+  margin: 6.25rem auto 1.25rem;
+  @media (max-width: $md){
+    width: 100%;
+  }
+}
+
+
+.email-form{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  @media (max-width: $md){
+    width: 100%;
+  }
+}
+
+.def-input{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 0.625rem;
+  &.active{
+   span{
+     transform: translateY(0);
+     opacity: 1;
+     font-size: 0.9rem;
+   }
+    input{
+      border-bottom: 2px solid $c-black;
+    }
+  }
+  span{
+    font-family: $font-chakra-petch;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    color: $c-black;
+    transform: translateY(2.1875rem);
+    transition: 0.3s;
+    cursor: text;
+    opacity: 0.9;
+  }
+  input{
+    width: 100%;
+    height: 3.125rem;
+    border: 0;
+    border-bottom: 2px solid rgba(2, 52, 54, 0.5);
+    font-family: $font-chakra-petch;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    color: $c-black;
+    transition: 0.3s;
+  }
+}
+
+footer{
+  width: 100%;
+  background: #EEEEEE;
+  height: 5.375rem;
+  @include flex('c', 'c');
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
