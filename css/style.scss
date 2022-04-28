@@ -369,6 +369,7 @@ main{
       transition: 0.3s;
       padding-left: 2.8125rem;
       padding-top: 1rem;
+      z-index: 10;
       &.active{
         left: 0;
       }
@@ -471,7 +472,7 @@ main{
   }
 }
 .mb-100{
-  margin-bottom: 6.25rem;
+  margin-bottom: 4.25rem;
   @media (max-width: $sm){
     margin-bottom: 3.25rem;
   }
@@ -491,7 +492,7 @@ main{
   width: 80%;
   height: 1px;
   background-color: #000;
-  margin: 6.25rem auto 1.25rem;
+  margin: 5.25rem auto 2.25rem;
   @media (max-width: $md){
     width: 100%;
   }

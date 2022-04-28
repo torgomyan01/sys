@@ -63,3 +63,20 @@ mobileMenu.on('click', function (){
         _menu.addClass(active);
     }
 })
+
+
+// for view active section and scroll to section
+$(window).on('load', function (){
+    const id = location.hash;
+    if(id !== '' && id.includes('#')){
+        $('main .content-site').animate({
+            scrollTop: $(id).offset().top - 100
+        })
+        const elem = $(`a[href="${id}"`);
+        if(elem.hasClass('category-item')){
+            elem.addClass(active).parent().parent().addClass(active);
+        } else {
+            elem.addClass(active).parent().addClass(active);
+        }
+    }
+})
