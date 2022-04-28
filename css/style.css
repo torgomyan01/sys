@@ -12636,6 +12636,9 @@ main {
       font-size: 1rem;
       line-height: 1.375rem;
       color: #023436; }
+      @media (max-width: 768px) {
+        main .content-site .info-to-section {
+          font-size: 14px; } }
       main .content-site .info-to-section img {
         margin-top: 0.3125rem; }
         @media (max-width: 768px) {
@@ -12747,4 +12750,85 @@ footer {
   font-size: 1rem;
   color: #000000; }
 
-/*# sourceMappingURL=style.css.map */
+.not-found {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1024px) {
+    .not-found {
+      display: block; } }
+
+.fot-found-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (max-width: 576px) {
+    .fot-found-page {
+      padding-top: 6.25rem; } }
+  .fot-found-page h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8rem;
+    text-align: center;
+    color: #023436;
+    margin-bottom: 1.25rem; }
+    @media (max-width: 1024px) {
+      .fot-found-page h1 {
+        font-size: 5.875rem; } }
+    @media (max-width: 992px) {
+      .fot-found-page h1 {
+        text-align: center; } }
+    @media (max-width: 576px) {
+      .fot-found-page h1 {
+        font-size: 4rem;
+        margin-bottom: 0; } }
+  .fot-found-page h4 {
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #023436; }
+    @media (max-width: 1024px) {
+      .fot-found-page h4 {
+        font-size: 1.875rem; } }
+    @media (max-width: 992px) {
+      .fot-found-page h4 {
+        text-align: center; } }
+    @media (max-width: 576px) {
+      .fot-found-page h4 {
+        font-size: 1.5rem; } }
+  .fot-found-page .btn-balck {
+    margin-top: 9.0625rem;
+    font-size: 2.25rem;
+    border-radius: 30.2407px;
+    padding: 0.75rem 5.3125rem; }
+    @media (max-width: 1024px) {
+      .fot-found-page .btn-balck {
+        font-size: 1.875rem;
+        margin-top: 2rem; } }
+    @media (max-width: 992px) {
+      .fot-found-page .btn-balck {
+        display: block;
+        margin: 0 auto; } }
+  .fot-found-page .not-found-image {
+    width: 90%; }
+    @media (max-width: 576px) {
+      .fot-found-page .not-found-image {
+        width: 60%; } }

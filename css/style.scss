@@ -451,6 +451,9 @@ main{
       font-size: 1rem;
       line-height: 1.375rem;
       color: $c-black;
+      @media (max-width: $md){
+        font-size: 14px;
+      }
       img{
         margin-top: 0.3125rem;
         @media (max-width: $md){
@@ -558,3 +561,79 @@ footer{
   font-size: 1rem;
   color: #000000;
 }
+
+
+// -------------- NOT FOUNT PAGE----------------
+.not-found{
+  width: 100%;
+  height: 100vh;
+  @include flex('c', 'c');
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.fot-found-page{
+  @include flex('c', 'c');
+  flex-wrap: wrap;
+  @media (max-width: $sm) {
+    padding-top: 6.25rem;
+  }
+  h1{
+    font-family: $font-chakra-petch;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8rem;
+    text-align: center;
+    color: #023436;
+    margin-bottom: 1.25rem;
+    @media (max-width: 1024px) {
+      font-size: 5.875rem;
+    }
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+    @media (max-width: $sm) {
+      font-size: 4rem;
+      margin-bottom: 0;
+    }
+  }
+  h4{
+    font-family: $font-chakra-petch;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #023436;
+    @media (max-width: 1024px) {
+      font-size: 1.875rem;
+    }
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+    @media (max-width: $sm) {
+      font-size: 1.5rem;
+    }
+  }
+  .btn-balck{
+    margin-top: 9.0625rem;
+    font-size: 2.25rem;
+    border-radius: 30.2407px;
+    padding: 0.75rem 5.3125rem;
+    @media (max-width: 1024px) {
+      font-size: 1.875rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: $lg) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .not-found-image{
+    width: 90%;
+    @media (max-width: $sm) {
+      width: 60%;
+    }
+  }
+}
+
+// -------------- NOT FOUNT PAGE----------------
