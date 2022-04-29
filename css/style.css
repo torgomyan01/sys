@@ -12312,8 +12312,8 @@ html {
   .fs65-sm {
     font-size: 4.0625rem; } }
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 2px;
+  width: 10px;
+  height: 8px;
   border-radius: 5px; }
 
 /* Track */
