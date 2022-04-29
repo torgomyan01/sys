@@ -12430,7 +12430,8 @@ header {
   @media (max-width: 768px) {
     header {
       -webkit-box-shadow: 0 0 5px #0000003b;
-              box-shadow: 0 0 5px #0000003b; } }
+              box-shadow: 0 0 5px #0000003b;
+      margin-bottom: 0; } }
   header .mobile-menu-board, header .login-block {
     display: none;
     font-size: 2.5rem;
@@ -12570,7 +12571,7 @@ main {
         padding-left: 2.8125rem;
         padding-top: 1rem;
         z-index: 10;
-        top: 5.375rem; }
+        top: 5.275rem; }
         main .menu.active {
           left: 0; } }
     main .menu .menu-item {
@@ -12660,6 +12661,9 @@ main {
     main .content-site .main-menu {
       width: 100%;
       min-height: calc(100vh - 100px); }
+      @media (max-width: 768px) {
+        main .content-site .main-menu {
+          padding-top: 0.625rem; } }
 
 .mb-100 {
   margin-bottom: 4.25rem; }
