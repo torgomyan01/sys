@@ -353,27 +353,26 @@ header{
 main{
   width: 100%;
   height: calc(100vh - #{$header-height + $header-margin});
-  @include flex('s', 's');
+  @include flex('sb', 's');
   padding-left: 3.75rem;
   @media (max-width: $md){
     padding-left: 0;
   }
   .menu{
-    @include col(3);
-    margin-top: 2rem;
-    height: calc(100vh - 150px);
+    min-width: 17rem;
+    margin-top: -30px;
+    padding-top: 30px;
     overflow-y: auto;
     overflow-x: hidden;
     margin-right: 0.9375rem;
+    border-right: 1px solid #eee;
+    height: calc(100% + 30px);
     &::-webkit-scrollbar {
       width: 2px;
       height: 2px;
     }
     &::-webkit-scrollbar-thumb {
       background: rgba(206, 206, 206, 0.5);
-    }
-    @media (max-width: $lg){
-      @include col(4);
     }
     @media (max-width: $md){
       position: fixed;
@@ -453,9 +452,10 @@ main{
   }
   .content-site{
     @include col(9);
-    padding-right: 19%;
+    padding-right: 16.5%;
     height: 100%;
     overflow-y: auto;
+    position: relative;
     @media (max-width: $lg){
       padding: 0 1.25rem;
       width: 100%;

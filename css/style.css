@@ -12531,9 +12531,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -12542,20 +12542,19 @@ main {
     main {
       padding-left: 0; } }
   main .menu {
-    width: calc((100% / 12) * 3);
-    margin-top: 2rem;
-    height: calc(100vh - 150px);
+    min-width: 17rem;
+    margin-top: -30px;
+    padding-top: 30px;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-right: 0.9375rem; }
+    margin-right: 0.9375rem;
+    border-right: 1px solid #eee;
+    height: calc(100% + 30px); }
     main .menu::-webkit-scrollbar {
       width: 2px;
       height: 2px; }
     main .menu::-webkit-scrollbar-thumb {
       background: rgba(206, 206, 206, 0.5); }
-    @media (max-width: 992px) {
-      main .menu {
-        width: calc((100% / 12) * 4); } }
     @media (max-width: 768px) {
       main .menu {
         position: fixed;
@@ -12633,9 +12632,10 @@ main {
         max-height: 200px; }
   main .content-site {
     width: calc((100% / 12) * 9);
-    padding-right: 19%;
+    padding-right: 16.5%;
     height: 100%;
-    overflow-y: auto; }
+    overflow-y: auto;
+    position: relative; }
     @media (max-width: 992px) {
       main .content-site {
         padding: 0 1.25rem;
