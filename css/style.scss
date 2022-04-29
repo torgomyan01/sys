@@ -239,7 +239,11 @@ $c-black-hover: #049A8F;
   }
 }
 
+$header-margin: 1.875rem;
+
 $header-height: 5.375rem;
+
+
 
 a{
   color: $c-black;
@@ -252,6 +256,7 @@ header{
   height: $header-height;
   @include flex('sb', 'c');
   padding: 0 2.8125rem;
+  margin-bottom: $header-margin;
   @media (max-width: $md){
     box-shadow: 0 0 5px #0000003b;
   }
@@ -346,7 +351,7 @@ header{
 
 main{
   width: 100%;
-  height: calc(100vh - #{$header-height});
+  height: calc(100vh - #{$header-height + $header-margin});
   @include flex('s', 's');
   padding-left: 3.75rem;
   @media (max-width: $md){
@@ -354,13 +359,24 @@ main{
   }
   .menu{
     @include col(3);
-    margin-top: 3rem;
+    margin-top: 2rem;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 0.9375rem;
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(206, 206, 206, 0.5);
+    }
     @media (max-width: $lg){
       @include col(4);
     }
     @media (max-width: $md){
       position: fixed;
-      background: #ffffff17;
+      background: #ffffff8f;
       width: 100%;
       height: calc(100vh - 60px);
       margin-top: 0;
@@ -370,6 +386,7 @@ main{
       padding-left: 2.8125rem;
       padding-top: 1rem;
       z-index: 10;
+      top: $header-height;
       &.active{
         left: 0;
       }
@@ -384,6 +401,7 @@ main{
       margin-bottom: 0.625rem;
       font-family: $font-oxanium;
       .menu-name{
+        cursor: pointer;
         white-space: nowrap;
       }
       &:hover{
@@ -464,10 +482,10 @@ main{
     }
     .main-menu{
       width: 100%;
-      min-height: 500px;
-      @media (max-width: $lg){
-        min-height: unset;
-      }
+      min-height: calc(100vh - 100px);
+      //@media (max-width: $lg){
+      //  min-height: unset;
+      //}
     }
   }
 }

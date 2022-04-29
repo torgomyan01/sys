@@ -12425,7 +12425,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 2.8125rem; }
+  padding: 0 2.8125rem;
+  margin-bottom: 1.875rem; }
   @media (max-width: 768px) {
     header {
       -webkit-box-shadow: 0 0 5px #0000003b;
@@ -12525,7 +12526,7 @@ header {
 
 main {
   width: 100%;
-  height: calc(100vh - 5.375rem);
+  height: calc(100vh - 7.25rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12541,14 +12542,23 @@ main {
       padding-left: 0; } }
   main .menu {
     width: calc((100% / 12) * 3);
-    margin-top: 3rem; }
+    margin-top: 2rem;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 0.9375rem; }
+    main .menu::-webkit-scrollbar {
+      width: 2px;
+      height: 2px; }
+    main .menu::-webkit-scrollbar-thumb {
+      background: rgba(206, 206, 206, 0.5); }
     @media (max-width: 992px) {
       main .menu {
         width: calc((100% / 12) * 4); } }
     @media (max-width: 768px) {
       main .menu {
         position: fixed;
-        background: #ffffff17;
+        background: #ffffff8f;
         width: 100%;
         height: calc(100vh - 60px);
         margin-top: 0;
@@ -12559,7 +12569,8 @@ main {
         transition: 0.3s;
         padding-left: 2.8125rem;
         padding-top: 1rem;
-        z-index: 10; }
+        z-index: 10;
+        top: 5.375rem; }
         main .menu.active {
           left: 0; } }
     main .menu .menu-item {
@@ -12573,6 +12584,7 @@ main {
       margin-bottom: 0.625rem;
       font-family: "Oxanium", cursive; }
       main .menu .menu-item .menu-name {
+        cursor: pointer;
         white-space: nowrap; }
       main .menu .menu-item:hover {
         color: #049A8F; }
@@ -12647,10 +12659,7 @@ main {
             width: 116px; } }
     main .content-site .main-menu {
       width: 100%;
-      min-height: 500px; }
-      @media (max-width: 992px) {
-        main .content-site .main-menu {
-          min-height: unset; } }
+      min-height: calc(100vh - 100px); }
 
 .mb-100 {
   margin-bottom: 4.25rem; }
